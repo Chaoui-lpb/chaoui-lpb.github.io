@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BOF on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/bof/</link>
+    <description>Recent content in BOF on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Aug 2024 14:43:53 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bof/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keylogger part 1 -- Advanced Keylogger</title>
+      <link>http://localhost:1313/posts/keylogger-pt1/</link>
+      <pubDate>Fri, 30 Aug 2024 14:43:53 -0600</pubDate>
+      <guid>http://localhost:1313/posts/keylogger-pt1/</guid>
+      <description>0. Basic Keyloggers Basic keyloggers are commonly built using functions like GetAsyncKeyState or SetWindowsHookEx in the Windows API to capture keystrokes. These functions allow a program to intercept and record keyboard input by monitoring key presses and releases.&#xA;However, they are frequently monitored and easily detected by EDR/AV software because these security tools hook into the underlying native functions to identify suspicious activity. To evade detection, more advanced techniques, such as using direct system calls (syscalls), are used.</description>
+    </item>
+    <item>
+      <title>Clipboard monitoring with evasions</title>
+      <link>http://localhost:1313/posts/clipboard/</link>
+      <pubDate>Fri, 30 Aug 2024 13:43:53 -0600</pubDate>
+      <guid>http://localhost:1313/posts/clipboard/</guid>
+      <description>Basic code void main() { HWND owner = GetConsoleWindow(); OpenClipboard(owner); owner = GetClipboardData(CF_TEXT); printf(&amp;#34;Clipboard: %s\n&amp;#34;, (char *)owner); CloseClipboard(); } In our basic code, we&amp;rsquo;re using 4 functions that we would like to evade. These are GetConsoleWindow(), OpenClipboard(), GetClipboardData() and CloseClipboard. Therefore, we need to understand what are the basic functions from the kernel these functions called.&#xA;OpenClipboard &amp;ndash;&amp;gt; NtUserOpenClipboard GetClipboardData &amp;ndash;&amp;gt; NtUserGetClipboardData CloseClipboard &amp;ndash;&amp;gt; NtUserCloseClipboard&#xA;GetConsoleWindow() More complex but &amp;ndash;&amp;gt; ntdll.</description>
+    </item>
+  </channel>
+</rss>
